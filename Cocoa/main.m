@@ -1,11 +1,3 @@
-//
-//  main.m
-//  Cocoa
-//
-//  Created by sultan tarimo on 15/12/17.
-//
-//
-
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
