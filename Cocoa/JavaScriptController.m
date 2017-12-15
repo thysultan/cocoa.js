@@ -15,8 +15,8 @@ static JSContext *context = nil;
 
 	NSString *dir = @"src/";
 	NSString *path = [[dir stringByAppendingString: file] stringByDeletingPathExtension];
-	NSURL *url = [[NSBundle mainBundle] URLForResource: path withExtension: @"js"];
-	NSString *str = [NSString stringWithContentsOfURL: url encoding: NSUTF8StringEncoding error: nil];
+	NSString *url = [[NSBundle mainBundle] pathForResource: path ofType: @"js"];
+	NSString *str = [NSString stringWithContentsOfFile: url encoding: NSUTF8StringEncoding error: nil];
 
 	return [context evaluateScript: str];
 }
