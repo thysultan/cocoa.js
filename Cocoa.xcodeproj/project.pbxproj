@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F7DCF3D1FE3C22E00F37DE2 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 2FD035F71FE3C0710054436D /* main.js */; };
+		2F7DCF481FE42FE600F37DE2 /* src in Resources */ = {isa = PBXBuildFile; fileRef = 2F7DCF471FE42FE500F37DE2 /* src */; };
 		2FD035DA1FE3BD390054436D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD035D91FE3BD390054436D /* main.m */; };
 		2FD035DD1FE3BD390054436D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD035DC1FE3BD390054436D /* AppDelegate.m */; };
 		2FD035E01FE3BD390054436D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD035DF1FE3BD390054436D /* ViewController.m */; };
@@ -16,8 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F7DCF471FE42FE500F37DE2 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
 		2FD035D51FE3BD390054436D /* Cocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cocoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FD035D91FE3BD390054436D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Cocoa/main.m; sourceTree = "<group>"; };
+		2FD035D91FE3BD390054436D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2FD035DB1FE3BD390054436D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2FD035DC1FE3BD390054436D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2FD035DE1FE3BD390054436D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -26,7 +27,6 @@
 		2FD035E91FE3BD390054436D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Cocoa/Info.plist; sourceTree = "<group>"; };
 		2FD035EF1FE3BE0C0054436D /* JavaScriptController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JavaScriptController.h; sourceTree = "<group>"; };
 		2FD035F01FE3BE2B0054436D /* JavaScriptController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JavaScriptController.m; sourceTree = "<group>"; };
-		2FD035F71FE3C0710054436D /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = main.js; path = Cocoa/main.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,13 +40,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F7DCF3E1FE406A900F37DE2 /* jsc */ = {
+			isa = PBXGroup;
+			children = (
+				2FD035EF1FE3BE0C0054436D /* JavaScriptController.h */,
+				2FD035F01FE3BE2B0054436D /* JavaScriptController.m */,
+			);
+			name = jsc;
+			sourceTree = "<group>";
+		};
+		2F7DCF3F1FE406BE00F37DE2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				2FD035DE1FE3BD390054436D /* ViewController.h */,
+				2FD035DF1FE3BD390054436D /* ViewController.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		2F7DCF401FE406C500F37DE2 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				2FD035DB1FE3BD390054436D /* AppDelegate.h */,
+				2FD035DC1FE3BD390054436D /* AppDelegate.m */,
+			);
+			name = app;
+			sourceTree = "<group>";
+		};
 		2FD035CC1FE3BD390054436D = {
 			isa = PBXGroup;
 			children = (
+				2F7DCF471FE42FE500F37DE2 /* src */,
 				2FD035D71FE3BD390054436D /* framework */,
-				2FD035F21FE3BE390054436D /* assets */,
 				2FD035D61FE3BD390054436D /* dist */,
-				2FD035D91FE3BD390054436D /* main.m */,
+				2FD035E41FE3BD390054436D /* Assets.xcassets */,
 				2FD035E91FE3BD390054436D /* Info.plist */,
 			);
 			sourceTree = "<group>";
@@ -62,32 +89,13 @@
 		2FD035D71FE3BD390054436D /* framework */ = {
 			isa = PBXGroup;
 			children = (
-				2FD035DB1FE3BD390054436D /* AppDelegate.h */,
-				2FD035DC1FE3BD390054436D /* AppDelegate.m */,
-				2FD035DE1FE3BD390054436D /* ViewController.h */,
-				2FD035DF1FE3BD390054436D /* ViewController.m */,
-				2FD035EF1FE3BE0C0054436D /* JavaScriptController.h */,
-				2FD035F01FE3BE2B0054436D /* JavaScriptController.m */,
+				2F7DCF401FE406C500F37DE2 /* app */,
+				2F7DCF3F1FE406BE00F37DE2 /* view */,
+				2F7DCF3E1FE406A900F37DE2 /* jsc */,
+				2FD035D91FE3BD390054436D /* main.m */,
 			);
 			name = framework;
 			path = Cocoa;
-			sourceTree = "<group>";
-		};
-		2FD035F21FE3BE390054436D /* assets */ = {
-			isa = PBXGroup;
-			children = (
-				2FD035F31FE3BE550054436D /* js */,
-				2FD035E41FE3BD390054436D /* Assets.xcassets */,
-			);
-			name = assets;
-			sourceTree = "<group>";
-		};
-		2FD035F31FE3BE550054436D /* js */ = {
-			isa = PBXGroup;
-			children = (
-				2FD035F71FE3C0710054436D /* main.js */,
-			);
-			name = js;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +155,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F7DCF3D1FE3C22E00F37DE2 /* main.js in Resources */,
 				2FD035E51FE3BD390054436D /* Assets.xcassets in Resources */,
+				2F7DCF481FE42FE600F37DE2 /* src in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

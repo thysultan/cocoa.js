@@ -4,6 +4,6 @@
 
 @implementation ViewController
 - (void) viewDidLoad {
-		[JavaScriptController require: @"main"];
+		[JavaScriptController require: @"index"];
 }
 @end

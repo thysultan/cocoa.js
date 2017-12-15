@@ -1,7 +1,7 @@
 #import <JavaScriptCore/JavaScriptCore.h>
 
 @protocol JavaScriptControllerExports <JSExport>
-+ (void) require: (NSString *) file;
++ (JSValue *) require: (NSString *) file;
 + (void) log: (NSString *) message;
 + (void) postMessage: (JSValue *) message;
 + (instancetype) instantiate;
