@@ -1,1 +1,4 @@
+* text=auto
+
+*.pbxproj linguist-generated
 *.pbxproj binary merge=union
