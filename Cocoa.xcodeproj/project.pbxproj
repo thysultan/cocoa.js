@@ -40,33 +40,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2F7DCF3E1FE406A900F37DE2 /* jsc */ = {
-			isa = PBXGroup;
-			children = (
-				2FD035EF1FE3BE0C0054436D /* JavaScriptController.h */,
-				2FD035F01FE3BE2B0054436D /* JavaScriptController.m */,
-			);
-			name = jsc;
-			sourceTree = "<group>";
-		};
-		2F7DCF3F1FE406BE00F37DE2 /* view */ = {
-			isa = PBXGroup;
-			children = (
-				2FD035DE1FE3BD390054436D /* ViewController.h */,
-				2FD035DF1FE3BD390054436D /* ViewController.m */,
-			);
-			name = view;
-			sourceTree = "<group>";
-		};
-		2F7DCF401FE406C500F37DE2 /* app */ = {
-			isa = PBXGroup;
-			children = (
-				2FD035DB1FE3BD390054436D /* AppDelegate.h */,
-				2FD035DC1FE3BD390054436D /* AppDelegate.m */,
-			);
-			name = app;
-			sourceTree = "<group>";
-		};
 		2FD035CC1FE3BD390054436D = {
 			isa = PBXGroup;
 			children = (
@@ -89,9 +62,12 @@
 		2FD035D71FE3BD390054436D /* framework */ = {
 			isa = PBXGroup;
 			children = (
-				2F7DCF401FE406C500F37DE2 /* app */,
-				2F7DCF3F1FE406BE00F37DE2 /* view */,
-				2F7DCF3E1FE406A900F37DE2 /* jsc */,
+				2FD035DB1FE3BD390054436D /* AppDelegate.h */,
+				2FD035DC1FE3BD390054436D /* AppDelegate.m */,
+				2FD035DE1FE3BD390054436D /* ViewController.h */,
+				2FD035DF1FE3BD390054436D /* ViewController.m */,
+				2FD035EF1FE3BE0C0054436D /* JavaScriptController.h */,
+				2FD035F01FE3BE2B0054436D /* JavaScriptController.m */,
 				2FD035D91FE3BD390054436D /* main.m */,
 			);
 			name = framework;

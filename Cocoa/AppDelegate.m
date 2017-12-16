@@ -1,4 +1,3 @@
-#import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 #import "ViewController.h"
 
@@ -6,12 +5,12 @@
 
 - (BOOL) application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	UIViewController *rootViewController = [[ViewController alloc] init];
-    
+
 	[self setWindow: [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]]];
 	[[self window] setBackgroundColor: UIColor.whiteColor];
 	[[self window] setRootViewController: rootViewController];
 	[[self window] makeKeyAndVisible];
-    
+
 	return YES;
 }
 

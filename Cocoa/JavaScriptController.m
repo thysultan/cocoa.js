@@ -1,5 +1,3 @@
-#import <Foundation/Foundation.h>
-#import <JavaScriptCore/JavaScriptCore.h>
 #import "JavaScriptController.h"
 
 static JSContext *context = nil;

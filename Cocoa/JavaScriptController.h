@@ -1,5 +1,7 @@
 #import <JavaScriptCore/JavaScriptCore.h>
 
+static JSContext *context;
+
 @protocol JavaScriptControllerExports <JSExport>
 + (JSValue *) require: (NSString *) file;
 + (void) log: (NSString *) message;

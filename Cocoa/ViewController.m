@@ -3,6 +3,6 @@
 
 @implementation ViewController
 - (void) viewDidLoad {
-		[JavaScriptController require: @"index"];
+	[JavaScriptController require: @"index"];
 }
 @end
